@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 
 <head>
+	<meta charset="utf-8">
 	<title>Code-Pal App</title>
+	
+	<!-- This section contains any CDN or link from other stylesheets -->
+	
+	<!-- Material CSS link -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  	<!-- Include Froala editor external CSS. -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+ 
+    <!-- Include Froala Editor Basic style. -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.5/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.5/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- CSS rules for styling the element inside the editor such as p, h1, h2, etc. -->
+	<link href="../css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
 	
 	<h1> This is a code pal app</h1>
 
+	<!-- Create a tag that we will use as the editable area for Froala text editor. -->
+    <!-- You can use a div tag as well. -->
+    <textarea></textarea>
+
 </body>
+
+	<!-- This section contains any JS code, JS link or CDN -->
+
+	<!-- Compiled and minified JavaScript for Material CSS-->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+  	</script>
+
+  	<!-- Include external JS libs for Froala Editor. -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+ 
+    <!-- Include Froala Editor JS files. -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.7.5/js/froala_editor.pkgd.min.js"></script>
+ 
+    <!-- Initialize the Froala editor. -->
+    <script> $(function() { $('textarea').froalaEditor() }); </script>
+
+</html>
